@@ -8,7 +8,7 @@ void escribirTexto(void)
 {
     char szBuffer[50];
 
-    if(!abrirArchivo("textoMain4.txt", "a"))
+    if(!abrirArchivo("textoMain4.txt", "w"))
     {
         printf("Error al abrir el archivo textoMain4.txt para escritura.\n");
         return;
