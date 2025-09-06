@@ -61,7 +61,7 @@ void cargarVuelos(void)
                 vuelo.id_vuelo = 1000;
             } else if(continuar == 1)
             {
-                if(!abrirArchivo("lote.dat", "w"))
+                if(!abrirArchivo("lote.dat", "a"))
                 {
                     printf("Error al abrir el archivo para escritura.\n");
                     return;
