@@ -93,7 +93,8 @@ int main(int argc,char *argv[])
         cargarVuelos();
 
         levantaSemaforo(id_semaforo);
-        usleep(10*1000);
+        /* Esperamls 300ms antes de cheqear si hay un lote nuevo */
+        usleep(300*1000);
     }
 
 

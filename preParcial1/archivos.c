@@ -35,7 +35,6 @@ int leerArchivo(char *szBuffer, int sizeOfBuffer)
     */
     if (fgets(szBuffer, sizeOfBuffer, archivo) != NULL) 
     {
-        
         return TRUE;
     } else
     {
