@@ -36,7 +36,7 @@ void levantaSemaforo(int id_semaforo)
     struct sembuf operacion;
     printf("Levanta SEMAFORO \n");
     operacion.sem_num = 0;
-    operacion.sem_op = 1; /* Incrementa el semaforo en 1 */ 
+    operacion.sem_op = 1; /*  Incrementa el semaforo en 1 */
     operacion.sem_flg = 0;
     semop(id_semaforo, &operacion, 1);
 }
@@ -47,7 +47,7 @@ void esperaSemaforo(int id_semaforo)
     struct sembuf operacion;
     printf("Espera SEMAFORO \n");
     operacion.sem_num = 0;
-    operacion.sem_op = -1; /* Decrementa el semaforo en 1 */ 
+    operacion.sem_op = -1; /*  decrementa el semaforo en 1 */
     operacion.sem_flg = 0;
     semop(id_semaforo, &operacion, 1);
 }
