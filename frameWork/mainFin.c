@@ -5,6 +5,8 @@
 #include "unistd.h"
 #include "global.h"
 #include "archivos.h"
+#include "time.h"
+#include "funciones.h"
 
 
 int main(int argc, char *argv[])
